@@ -1,0 +1,101 @@
+.headerTop {
+  min-height: 105px;
+  background: #ebf5fd;
+  border-bottom: 8px solid #c8e5ff;
+  font-family: latomedium;
+  color: #365fab;
+}
+.headerTop b {
+  color: #e30613;
+}
+.headerTop__tel {
+  text-align: center;
+}
+.headerTop__tel .tel {
+  font-size: 29px;
+}
+.headerTop__tel .button {
+  font-size: 18px;
+  text-decoration: underline;
+}
+.headerTop__tel .button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.headerTop .flex_row__between {
+  height: 105px;
+}
+.headerMid {
+  padding-top: 40px;
+  min-height: 624px;
+  background: url("/img/header-bg.jpg") center bottom no-repeat;
+}
+.headerMid__form {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 378px;
+  height: 427px;
+  color: #fff;
+  background: url("/img/header-form-bg.png");
+}
+.headerMid__form a {
+  color: #fff;
+}
+.headerMid__form .title {
+  margin-bottom: 30px;
+  font-family: latolight;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+}
+.headerMid__form .title b {
+  font-family: latoregular;
+  font-weight: 400;
+}
+.headerMid__form input {
+  margin-bottom: 17px;
+}
+.headerMid__form input:last-child {
+  margin-bottom: 19px;
+}
+.headerMid__form .agreement {
+  margin-top: 15px;
+  text-align: center;
+}
+.headerMid__features {
+  width: 500px;
+  height: 585px;
+  background: url("/img/header-features-bg.png") no-repeat;
+}
+.headerMid__features img {
+  display: block;
+  margin: 0 auto 47px auto;
+}
+.headerMid__features li {
+  position: relative;
+  padding: 15px 0 15px 14px;
+  margin: 0 30px 23px 70px;
+  font-family: latomedium;
+  font-size: 20px;
+  color: #4c88be;
+  text-transform: uppercase;
+  border-left: 1px solid #a6a6a6;
+}
+.headerMid__features li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -56px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 45px;
+  background: url("/img/header-features-iconset.png") no-repeat;
+}
+.headerMid__features li:nth-child(2):before {
+  background-position: 0 -75px;
+}
+.headerMid__features li:nth-child(3):before {
+  background-position: 0 -154px;
+}

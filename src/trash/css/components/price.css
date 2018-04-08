@@ -1,0 +1,80 @@
+.price {
+  margin-top: 92px;
+}
+.price h2 {
+  margin-bottom: 90px;
+  padding: 20px 0 20px 0;
+  height: 80px;
+  font-family: latoblack;
+  font-size: 30px;
+  color: #4c88be;
+  text-align: center;
+  text-transform: uppercase;
+  background: #e7f5ff;
+}
+.price__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 543px;
+  height: 354px;
+  background: url("/img/price-form-bg.jpg") no-repeat;
+  background-size: cover;
+}
+.price__form .title {
+  margin: 65px 0 28px 0;
+  font-family: latoregular;
+  font-size: 23px;
+  font-weight: 600;
+  color: #595959;
+  text-transform: uppercase;
+}
+.price__form input {
+  min-width: 192px;
+  width: 192px;
+  margin-right: 20px;
+  border-color: #b1b1b1;
+}
+.price__form input:last-child {
+  margin-right: 0;
+}
+.price__form input::placeholder {
+  color: #777;
+  opacity: 1;
+}
+.price__form input:-ms-input-placeholder {
+  color: #777;
+}
+.price__form input::-ms-input-placeholder {
+  color: #777;
+}
+.price__form button {
+  margin: 22px 0 16px 0;
+}
+.price__form .agreement {
+  color: #989898;
+}
+.price__form .agreement a {
+  color: #6a9dcf;
+}
+.price__right {
+  margin: 22px 0 0 10%;
+  width: 300px;
+  font-family: latoregular;
+  text-align: center;
+  color: #595959;
+}
+.price__right p {
+  margin: 20px 0 10px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.price__right span {
+  font-size: 32px;
+  font-weight: 600;
+}
+.price__right span b {
+  font-family: latoblack;
+  font-size: 50px;
+  color: #4c88be;
+}

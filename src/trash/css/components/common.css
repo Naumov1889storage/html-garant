@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'latomedium';
+  src: url("/fonts/latomedium.ttf");
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("/fonts/latoregular.ttf");
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("/fonts/latolight.ttf");
+}
+@font-face {
+  font-family: 'latoblack';
+  src: url("/fonts/latoblack.ttf");
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("/fonts/latobold.ttf");
+}
+* {
+  font-family: latolight;
+}
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  max-width: 1054px;
+  width: 100%;
+}
+input {
+  padding: 0 10px 0 10px;
+  min-width: 250px;
+  max-width: 100%;
+  height: 39px;
+  font-family: latoregular;
+  font-size: 18px;
+  background: #fff;
+  border: 1px solid #b6a088;
+}
+input::placeholder {
+  color: #0055a3;
+  opacity: 1;
+}
+input:-ms-input-placeholder {
+  color: #0055a3;
+}
+input::-ms-input-placeholder {
+  color: #0055a3;
+}
+.btn1 {
+  position: relative;
+  width: 257px;
+  height: 56px;
+  font-family: latoblack;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  transition: 0.3;
+}
+.btn1:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  left: 4px;
+  bottom: 4px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #fff;
+}
+.btn1:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+.btn2 {
+  position: relative;
+  padding-right: 60px;
+  width: 261px;
+  height: 47px;
+  font-family: latobold;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #1f8147;
+  border: 1px solid #9f9f9f;
+  background-image: -moz-linear-gradient(90deg, #d7d7d7 0%, #fff 100%);
+  background-image: -webkit-linear-gradient(90deg, #d7d7d7 0%, #fff 100%);
+  background-image: -ms-linear-gradient(90deg, #d7d7d7 0%, #fff 100%);
+}
+.btn2:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  right: 58px;
+  width: 1px;
+  max-height: 100%;
+  background: #9f9f9f;
+}
+.btn2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 31px;
+  background: url("/img/btn-excel.png");
+}
+.agreement {
+  max-width: 300px;
+  font-family: latoregular;
+  font-size: 12px;
+  line-height: 16px;
+}

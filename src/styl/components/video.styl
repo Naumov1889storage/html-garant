@@ -1,0 +1,50 @@
+.video {
+	margin-top: 72px
+	h2 {
+		position: absolute
+		z-index: 10
+		top: -20px
+		padding: 0 13px 0 13px
+		max-width: 580px
+		font-family: latolight
+		font-size: 30px
+		color: #4c88be
+		background: #ffffff
+	}
+	&__wrap {
+		display: flex
+		justify-content: center
+		position: relative
+		margin: 0 auto
+		padding: 60px 0 40px 0
+		width: 890px
+		&:before {
+			content: ''
+			position: absolute
+			top: 6px
+			right: 6px
+			bottom: 6px
+			left: 6px
+			max-width: 100%
+			max-height: 100%
+			border: 1px solid #a5c3de
+		}
+		&:after {
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border: 1px solid #a5c3de
+		}
+		video {
+			position: relative
+			z-index: 10
+			display: block
+			max-width: 800px
+			width: 100%
+			height: 450px
+		}
+	}
+}

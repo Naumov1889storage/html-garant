@@ -1,0 +1,21 @@
+.blocks {
+  margin-top: 40px;
+}
+.blocks h2 {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #000;
+}
+.blocks .item {
+  position: relative;
+  padding-left: 85px;
+  width: 350px;
+}
+.blocks .item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: #ffa500;
+}

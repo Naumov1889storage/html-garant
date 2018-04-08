@@ -1,0 +1,63 @@
+.facts {
+	margin-top: 60px
+	.container {
+		display: flex
+		flex-direction: column
+		align-items center
+	}
+	.item {
+		display: flex
+		margin-bottom: 45px
+		font-family: latolight
+		font-size: 22px
+		font-weight: 600
+		line-height: 22px
+		color: #454545
+		&:nth-child(2) {
+			p.img {
+				&--left {
+					&:before {
+						background-position: 0 -88px
+					}
+				}
+			}
+		}
+		&:nth-child(3) {
+			p.img {
+				&--left {
+					&:before {
+						background-position: 0 -182px
+					}
+				}
+			}
+		}
+		p {
+			width: 330px
+			&.text {
+				&--right {
+					margin-right: 19px
+					text-align: right
+				}
+			}
+			&.img {
+				&--left {
+					position: relative
+					padding-left: 63px
+					&:before {
+						content: ''
+						position: absolute
+						top: 0
+						left: 0
+						width: 47px
+						height: 55px
+						background: url(/img/facts-iconset.png) no-repeat
+					}
+				}
+			}
+		}
+		b {
+			font-family: latoregular
+			color: #4786af
+		}
+	}
+}
