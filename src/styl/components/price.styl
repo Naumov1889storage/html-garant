@@ -15,8 +15,9 @@
 		display: flex
 		flex-direction: column
 		align-items: center
-		width: 543px
-		height: 354px
+		max-width: 543px
+		width: 100%
+		min-height: 354px
 		background: url(/img/price-form-bg.jpg) no-repeat
 		background-size: cover
 		.title {
@@ -75,6 +76,74 @@
 				font-family: latoblack
 				font-size: 50px
 				color: #4c88be
+			}
+		}
+	}
+}
+
+@media (max-width: 930px) {
+	.price {
+		h2 {
+			margin-bottom: 0
+		}
+		&__wrap {
+			flex-direction: column
+			align-items: center
+		}
+		&__right {
+			margin: 60px 0 0 0
+		}
+	}
+}
+
+@media (max-width: 630px) {
+    .price {
+		&__form {
+			padding: 0 30px 60px 30px
+			background-size: 100% 354px
+		}
+    }
+}
+
+@media (max-width: 520px) {
+    .price {
+		&__form {
+			background-size: 100% 400px
+		}
+		.input__wrap {
+			flex-direction: column
+			height: 100%
+			input {
+				margin-right: 0
+				margin-bottom: 15px
+				min-height: 39px
+				&:last-child {
+					margin-bottom: 0
+				}
+			}
+		}
+    }
+}
+
+@media (max-width: 430px) {
+	.price {
+		.container {
+			padding: 0
+		}
+		&__form {
+			padding-right: 15px
+			padding-left: 15px
+			background-size: 200% 470px
+			background-position: -100px 0
+			button {
+				width: 100%
+			}
+		}
+		.input__wrap {
+			width: 100%
+			input {
+				min-width: 100%
+				width: 100%
 			}
 		}
 	}

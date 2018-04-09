@@ -45,3 +45,34 @@
   font-family: latoregular;
   color: #4786af;
 }
+@media (max-width: 800px) {
+  .facts .item {
+    width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .facts .item {
+    flex-direction: column;
+    padding-bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid #454545;
+  }
+  .facts .item:last-child {
+    border: none;
+  }
+  .facts .item p {
+    width: 100%;
+    text-align: center;
+  }
+  .facts .item p.text--right {
+    text-align: center;
+  }
+  .facts .item p.img--left {
+    padding: 80px 0 0 0;
+  }
+  .facts .item p.img--left:before {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
