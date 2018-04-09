@@ -1,0 +1,17 @@
+.ask
+    .container
+        .ask__wrap.flex_row__around.align_center
+            form.ask__form
+                .ask__form--shown
+                    .title Задать вопрос
+                    textarea
+                    button(class='btn3 ask__form--hide' type='button') Задать вопрос
+                .ask__form--hidden
+                    .title Отправить ответ на почту:
+                    input(type='text' placeholder='Имя')
+                    input(type='email' placeholder='E-mail')
+                    input(type='tel' placeholder='Телефон')
+                    button(class='btn3' type='submit') Задать вопрос
+                    .agreement Нажимая на кнопку, вы принимаете <a href=''>Положение</a> и <a href=''>Согласие</a> на обработку персональныых данных.
+
+            img(class='ask__logo' src='img/garant-logo3.png')

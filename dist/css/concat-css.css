@@ -1,4 +1,123 @@
 
+.ask__wrap {
+  margin-top: 30px;
+  padding: 50px 0 50px 0;
+  border-top: 1px solid #dadada;
+}
+
+.ask__form {
+  padding: 15px 15px 10px 15px;
+  max-width: 325px;
+  width: 100%;
+  min-height: 305px;
+  border: 1px solid #bcbcbc;
+}
+
+.ask__form--shown,
+.ask__form--hidden {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.ask__form--hidden {
+  display: none;
+}
+
+.ask__form .title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: latoregular;
+  font-size: 22px;
+  color: #595959;
+}
+
+.ask__form textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
+  max-width: 255px;
+  width: 100%;
+  height: 155px;
+  resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ask__form input {
+  margin-bottom: 15px;
+  max-width: 255px;
+}
+
+.ask__form input::-webkit-input-placeholder {
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.ask__form input::-moz-placeholder {
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.ask__form input:-ms-input-placeholder {
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.ask__form input::-ms-input-placeholder {
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.ask__form input::placeholder {
+  color: #6b6b6b;
+  opacity: 1;
+}
+
+.ask__form input:-ms-input-placeholder {
+  color: #6b6b6b;
+}
+
+.ask__form input::-ms-input-placeholder {
+  color: #6b6b6b;
+}
+
+.ask__form button {
+  margin-bottom: 10px;
+}
+
+.ask__form .agreement {
+  color: #737373;
+}
+
+.ask__logo {
+  max-height: 93px;
+}
+
+@media (max-width: 800px) {
+  .ask__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .ask__logo {
+    margin-bottom: 50px;
+  }
+}
 .blocks {
   margin-top: 20px;
 }
@@ -102,6 +221,11 @@
 
 a {
   text-decoration: underline;
+  color: #6a9dcf;
+}
+
+a:visited {
+  color: #2e5e8e;
 }
 
 a:hover {
@@ -117,8 +241,8 @@ a:hover {
 
 input {
   padding: 0 10px 0 10px;
-  min-width: 250px;
-  max-width: 100%;
+  max-width: 250px;
+  width: 100%;
   height: 39px;
   font-family: latoregular;
   font-size: 18px;
@@ -229,11 +353,23 @@ input::-ms-input-placeholder {
   background: url("../img/btn-excel.png");
 }
 
+.btn3 {
+  max-width: 255px;
+  width: 100%;
+  height: 42px;
+  font-family: latoregular;
+  font-size: 22px;
+  color: #fff;
+  border: 1px solid #8a9ea9;
+  background: #9cc4da;
+}
+
 .agreement {
   max-width: 300px;
   font-family: latoregular;
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
 }
 .facts {
   margin-top: 40px;
@@ -348,7 +484,47 @@ input::-ms-input-placeholder {
             transform: translateX(-50%);
   }
 }
+.footer {
+  background: #ebebeb;
+  font-family: latoregular;
+  font-size: 18px;
+  line-height: 26px;
+  color: #454545;
+}
 
+.footer p {
+  margin-right: 20px;
+}
+
+.footer__wrap {
+  padding: 10px 0 10px 0;
+  min-height: 94px;
+  height: 100%;
+}
+
+@media (max-width: 920px) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media (max-width: 745px) {
+  .footer__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .footer__location {
+    margin-bottom: 10px;
+  }
+}
 .headerTop {
   min-height: 105px;
   background: #ebf5fd;
@@ -437,7 +613,6 @@ input::-ms-input-placeholder {
 
 .headerMid__form .agreement {
   margin-top: 15px;
-  text-align: center;
 }
 
 .headerMid__features {
@@ -556,7 +731,7 @@ input::-ms-input-placeholder {
 .price h2 {
   margin-bottom: 90px;
   padding: 20px 0 20px 0;
-  height: 80px;
+  min-height: 80px;
   font-family: latoblack;
   font-size: 30px;
   color: #4c88be;

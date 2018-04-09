@@ -1,0 +1,29 @@
+.footer {
+  background: #ebebeb;
+  font-family: latoregular;
+  font-size: 18px;
+  line-height: 26px;
+  color: #454545;
+}
+.footer p {
+  margin-right: 20px;
+}
+.footer__wrap {
+  padding: 10px 0 10px 0;
+  min-height: 94px;
+  height: 100%;
+}
+@media (max-width: 920px) {
+  .footer__logo {
+    display: none;
+  }
+}
+@media (max-width: 745px) {
+  .footer__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__location {
+    margin-bottom: 10px;
+  }
+}

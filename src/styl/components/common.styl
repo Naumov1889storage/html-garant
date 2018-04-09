@@ -25,6 +25,10 @@
 
 a {
 	text-decoration: underline
+	color: #6a9dcf
+	&:visited {
+		color: darken(#6a9dcf, 40%)
+	}
 	&:hover {
 		text-decoration: none
 	}
@@ -39,8 +43,8 @@ a {
 
 input {
 	padding: 0 10px 0 10px
-	min-width: 250px
-	max-width: 100%
+	max-width: 250px
+	width: 100%
 	height: 39px
 	font-family: latoregular
 	font-size: 18px
@@ -118,10 +122,22 @@ input {
 		background: url(/img/btn-excel.png)
 	}
 }
+.btn3 {
+	max-width: 255px
+	width: 100%
+	height: 42px
+	font-family: latoregular
+	font-size: 22px
+	color: #ffffff
+	border: 1px solid #8a9ea9
+	background: #9cc4da
+}
+
 
 .agreement {
 	max-width: 300px
 	font-family: latoregular
 	font-size: 12px
 	line-height: 16px
+	text-align: center
 }
