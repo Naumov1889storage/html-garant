@@ -376,7 +376,7 @@ input::-ms-input-placeholder {
   text-align: center;
 }
 .facts {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .facts .container {
@@ -393,6 +393,8 @@ input::-ms-input-placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 75px;
+  border-top: 1px solid #dadada;
 }
 
 .facts .item {
