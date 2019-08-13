@@ -1,2 +1,2 @@
 # garant
-https://naumov1889.github.io/garant/dist/
+https://naumov1889storage.github.io/html-garant/dist/
